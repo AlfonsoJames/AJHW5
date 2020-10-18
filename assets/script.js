@@ -6,9 +6,9 @@ d = n.getDate();
 document.getElementById("currentDay").innerHTML = m + "/" + d + "/" + y;
 
 //color changes for time blocks
-// var getTime = new Date().getHours();
-var getTime = 11;
+var getTime = new Date().getHours();
 var time = parseInt(getTime);
+console.log(time);
 
 $('.time-block').each(function(index, value) {
     var timeBlock = parseInt(this.id);
@@ -16,7 +16,7 @@ $('.time-block').each(function(index, value) {
         timeBlock += 12;
        }
     console.log(timeBlock); 
-    console.log(time);
+    
 
     if 
     (time < timeBlock) {
@@ -30,10 +30,6 @@ $('.time-block').each(function(index, value) {
         $( this ).removeClass( 'future present' ).addClass( 'past' );
     }
   );
-//   if (time < $("")) {
-    
-// }
-
 
 //save button functions
 
