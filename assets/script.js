@@ -1,6 +1,12 @@
 // //set current day//
-var date = moment().format('MMMM Do YYYY');
-$('#currentDay').text(date);
+
+setInterval(function(){
+    var date = moment().format('MMMM Do YYYY h:MM:ss a');
+    $('#currentDay').text(date);
+}, 1000);
+
+
+
 //color changes for time blocks//
 $('.time-block').each(function() {
     var timeBlock = parseInt(this.id);
