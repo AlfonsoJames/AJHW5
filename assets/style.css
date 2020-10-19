@@ -71,3 +71,7 @@ body {
     transition: all .3s ease-in-out;
   }
   
+  img {
+      width: 35px;
+      height: 30px;
+  }
